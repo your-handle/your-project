@@ -1,0 +1,6 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        io.github.nextjournal/clerk {:git/sha "85a66cf65bacf69e58b6e370872d02dc5678e0ad"}}
+ 
+ :aliases {:nextjournal/clerk {:exec-fn nextjournal.clerk/build!
+                               :exec-args {:paths ["src/your_project/index.clj"]}}}}
